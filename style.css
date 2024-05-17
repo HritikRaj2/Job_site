@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+  }
+  
+  nav li {
+    margin-left: 2rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hero Section Styles */
+  #hero {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  #hero h2 {
+    margin-bottom: 2rem;
+  }
+  
+  #hero input[type="text"],
+  #hero button {
+    padding: 0.8rem;
+    border: none;
+  }
+  
+  #hero button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Featured Jobs Section Styles */
+  #featured-jobs {
+    padding: 3rem 0;
+  }
+  
+  #featured-jobs ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 2rem;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #343a40; /* Dark background */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
