@@ -11,13 +11,13 @@
   <div id="app">
     <header>
       <div class="container">
-        <h1 style="display: flex; justify-content: left; align-items: left; padding-top: 40px;"><a href="index.html" style="color: inherit;font-size: 50px; text-decoration: none;">CareerCove</a></h1>
-        <nav>
+        <h1 style="display: flow-root;justify-content: left;align-items: left;padding-top: 5px;"><a href="index.html" style="color: inherit;font-size: 50px;text-decoration: none;">CareerCove</a></h1>
+         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Find Jobs</a></li>
-            <li><a href="#">For Employers</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="index.html" id="home-button">Home</a></li>
+            <li><a href="find.html" id="job-button">Find Jobs</a></li>
+            <li><a href="emp.html" id="emp-button">For Employers</a></li>
+            <li><a href="about.html" id="about-button">About</a></li>
             <li><a href="login.html" id="login-button">Login</a></li>
           </ul>
         </nav>
@@ -27,8 +27,22 @@
     <section id="hero">
       <div class="container">
         <h2>Find Your Next Opportunity</h2>
-        <input type="text" placeholder="Search by keyword, title, or company">
-        <button>Search</button>
+        <input type="text" placeholder="Search by keyword, title, or company" list="keywords">
+<datalist id="keywords">
+  <option value="Software Engineer">
+  <option value="Data Analyst">
+  <option value="Frontend Developer">
+  <option value="Backend Developer">
+  <option value="UI/UX Designer">
+</datalist>
+<datalist id="companies">
+  <option value="Google">
+  <option value="Microsoft">
+  <option value="Apple">
+  <option value="Amazon">
+  <option value="Facebook">
+  </datalist>
+<button>Search</button>
       </div>
     </section>
 
@@ -37,6 +51,48 @@
         <div class="container">
           <h2>Featured Jobs</h2>
           <ul>
+            <li>
+              <h3>Software Engineer</h3>
+              <p>Company: Tech Corp</p>
+              <p>Location: New York, NY</p>
+              <p>Experience: 2+ years</p>
+              <a href="job-details.html">View Details</a>
+            </li>
+            <li>
+              <h3>Data Analyst</h3>
+              <p>Company: Data Inc</p>
+              <p>Location: San Francisco, CA</p>
+              <p>Experience: 1+ years</p>
+              <a href="job-details.html">View Details</a>
+            </li>
+            <li>
+              <h3>Frontend Developer</h3>
+              <p>Company: Web Solutions</p>
+              <p>Location: Austin, TX</p>
+              <p>Experience: 3+ years</p>
+              <a href="job-details.html">View Details</a>
+            </li>
+            <li>
+              <h3>Backend Developer</h3>
+              <p>Company: Server Corp</p>
+              <p>Location: Seattle, WA</p>
+              <p>Experience: 4+ years</p>
+              <a href="job-details.html">View Details</a>
+            </li>
+            <li>
+              <h3>UI/UX Designer</h3>
+              <p>Company: Design Studio</p>
+              <p>Location: San Diego, CA</p>
+              <p>Experience: 2+ years</p>
+              <a href="job-details.html">View Details</a>
+            </li>
+            <li>
+              <h3>Project Manager</h3>
+              <p>Company: Business Inc</p>
+              <p>Location: Boston, MA</p>
+              <p>Experience: 5+ years</p>
+              <a href="job-details.html">View Details</a>
+            </li>
             </ul>
         </div>
       </section>
