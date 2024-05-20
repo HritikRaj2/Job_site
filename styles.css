@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  padding-bottom: 100px;
+  padding-top: 175px;
 }
 
 .container {
@@ -12,9 +14,12 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: #35424a;
   color: white;
-  padding-top: 5px;
+  padding: 5px 10px; /* Decreased padding */
   min-height: 15px;
   border-bottom: #e8491d 3px solid;
 }
@@ -43,7 +48,7 @@ header #branding h1 {
 
 header nav {
   float: right;
-  margin-top: 10px;
+  margin-top: -31px;
 }
 
 header .highlight, header .current a {
@@ -69,14 +74,62 @@ header a:hover {
 
 #login-button {
   padding: 10px 20px;
-  background-color: #e8491d;
+  background-color: #35424a;
   color: white;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
 #login-button:hover {
+  background-color: #e7280f;
+}
+
+#about-button {
+  padding: 10px 20px;
   background-color: #35424a;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#about-button:hover {
+  background-color: #e7280f;
+}
+
+#emp-button {
+  padding: 10px 20px;
+  background-color: #35424a;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#emp-button:hover {
+  background-color: #e7280f;
+}
+
+#job-button {
+  padding: 10px 20px;
+  background-color: #35424a;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#job-button:hover {
+  background-color: #e7280f;
+}
+
+#home-button {
+  padding: 10px 20px;
+  background-color: #35424a;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#home-button:hover {
+  background-color: #e7280f;
 }
 
 #hero button {
@@ -92,7 +145,8 @@ header a:hover {
 }
 
 #hero button:hover {
-  background-color: #e8491d;
+  background-color: #ddd; /* Change as needed */
+  cursor: pointer;
 }
 
 #hero h2 {
@@ -102,12 +156,58 @@ header a:hover {
   font-size: 55px;
 }
 
+#featured-jobs {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+
+#featured-jobs h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#featured-jobs ul {
+  list-style: none;
+  padding: 0;
+}
+
+#featured-jobs li {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#featured-jobs li h3 {
+  margin: 0 0 10px 0;
+}
+
+#featured-jobs li p {
+  margin: 0 0 10px 0;
+}
+
+#featured-jobs li a {
+  display: inline-block;
+  background-color: #35424a;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+#featured-jobs li a:hover {
+  background-color: #e8491d;
+}
+
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background: #35424a;
   color: white;
   text-align: center;
-  padding: 30px;
-  margin-top: 50px;
+  padding: 10px;
+  margin-top: 20px;
 }
 #login {
   padding: 50px 0;
@@ -127,11 +227,11 @@ footer {
   box-sizing: border-box;
   border: none;
   border-radius: 4px;
-  background-color: #f8f8f8;
+  background-color: #a8a5a5;
   font-size: 18px;
 }
 
-#login button {
+#login button{
   width: 100%;
   padding: 12px 20px;
   margin: 20px 0;
@@ -146,6 +246,7 @@ footer {
 #login button:hover {
   background-color: #e8491d;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -197,6 +298,9 @@ header #branding h1 {
 }
 
 #signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #fff;
   padding: 20px;
   margin: 0 auto;
@@ -210,16 +314,21 @@ header #branding h1 {
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
 }
 
 #signup form button {
-  display: block;
-  width: 100%;
-  padding: 10px;
+  font-size: 1.3em;
+  display: block ;
+  width: 20%;
+  padding: 5px; /* Reduce padding to make the button smaller */
   border: none;
+  margin-top: 10px;
   background: #35424a;
   color: #fff;
   cursor: pointer;
+  border-radius: 5px;
+  height: auto; /* Set height to auto so it adjusts based on the content and padding */
 }
 
 footer {
